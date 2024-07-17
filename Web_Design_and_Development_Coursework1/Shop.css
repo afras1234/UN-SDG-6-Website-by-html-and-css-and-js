@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* body {
+    background-color: #a7edff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/*product category headings*/
+.title1 {
+    margin-left: 100px;
+    font-size: 55px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #344c57;
+    margin-top: 20px;
+}
+.title2 {
+    text-align: left;
+    margin-left: 100px;
+    font-size: 55px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #344c57;
+    margin-top: 20px;
+}
+/*Main container*/
+.Container {
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);
+    min-width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+    padding-top: 20px;
+    transition: transform .5s;
+    border-radius: 10px; 
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.13));
+}
+/*cart icon*/
+svg {
+    margin-right: 100px;
+    width: 70px;
+    height: 35px;
+    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.479));
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+header .cart {
+    position: relative;
+    cursor: pointer;
+}
+/*cart item quantity*/
+header .cart span {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    background-color: #289cd2;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: -2px;
+    margin-right: 100px;
+}
+
+/*Product list row 1*/
+.productlist1 .product img {
+    width: 100%;
+    height: 320px;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist1 .product img#pitcher {
+    width: 90%;
+    height: 250px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist1 .product img#Bottle {
+    width: 95%;
+    height: 270px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.productlist1 .product img#UnderSink {
+    width: 240px;
+    height: 250px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.productlist1 .product img#Filter {
+    width: 150px;
+    height: 260px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.productlist1 {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.productlist1 .product {
+    background-color: #a7edffa2;
+    padding: 0;
+    border-radius: 10px;
+    width: 250px;
+    object-fit: fill;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.404));
+    margin-left: 110px;
+    margin-bottom: 30px;
+}
+.productlist1 .box {
+    background-color: #4b96a8;
+    width: 250px;
+    border-radius: 0 0 10px 10px;
+}
+.productlist1  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+.productlist1 .price {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.productlist1 button {
+    font-family: "Montserrat", sans-serif;
+    background-color: #344c57;
+    color: white;
+    padding: 8px 12px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.productlist1 button:hover {
+    background-color: #5bb1eb;
+    color: #1c2b31;
+    font-weight: 700;
+    padding: 8px 13px;
+    border-radius: 20px;
+}
+.productlist1 .addtocart :hover {
+    padding: 10px;
+}
+
+/*Product list row 2*/
+.productlist2 .product img {
+    width: 100%;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist2 .product img#Portable1 {
+    width: 120px;
+    height: 250px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist2 .product img#Gravity {
+    width: 100%;
+    height: 290px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist2 .product img#BottleFil {
+    width: 90%;
+    height: 250px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist2 .product img#Tablets {
+    width: 80%;
+    height: 210px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist2 {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.productlist2 .product {
+    background-color: #a7edffa2;
+    padding: 0;
+    border-radius: 10px;
+    width: 250px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.404));
+    margin-left: 110px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.productlist2 .box {
+    background-color: #4b96a8;
+    width: 250px;
+    border-radius: 0 0 10px 10px;
+}
+.productlist2  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+.productlist2 .price {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.productlist2 button {
+    font-family: "Montserrat", sans-serif;
+    background-color: #344c57;
+    color: white;
+    padding: 8px 12px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.productlist2 button:hover {
+    background-color: #5bb1eb;
+    color: #1c2b31;
+    font-weight: 700;
+    padding: 8px 13px;
+    border-radius: 20px;
+}
+.productlist2 .addtocart :hover {
+    padding: 10px;
+}
+
+/*Product list row 3*/
+.productlist3 .product img {
+    width: 100%;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist3 .product img#Umem {
+    width: 230px;
+    height: 255px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist3 .product img#ROin {
+    width: 280px;
+    height: 255px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    margin-left: -12px;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist3 .product img#ROcont {
+    width: 280px;
+    height: 255px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: -10px;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist3 .product img#SOftner {
+    width: 80%;
+    height: 255px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 20px 30px black);
+}
+.productlist3 {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.productlist3 .product {
+    background-color: #a7edffa2;
+    padding: 0;
+    border-radius: 10px;
+    width: 250px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.404));
+    margin-left: 110px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.productlist3 .box {
+    background-color: #4b96a8;
+    width: 250px;
+    border-radius: 0 0 10px 10px;
+}
+.productlist3  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+.productlist3 .price {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.productlist3 button {
+    font-family: "Montserrat", sans-serif;
+    background-color: #344c57;
+    color: white;
+    padding: 8px 12px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.productlist3 button:hover {
+    background-color: #5bb1eb;
+    color: #1c2b31;
+    font-weight: 700;
+    padding: 8px 13px;
+    border-radius: 20px;
+}
+.productlist3 .addtocart :hover {
+    padding: 10px;
+}
+/*middle image bar*/
+.middlecontent {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+.middlecontent .midimg img{
+    width: 1100px;
+    height: 260px;
+    filter: drop-shadow(1px 1px 5px rgba(9, 45, 122, 0.288));
+}
+/*middle image bar 2*/
+.middlecontent2 {
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+}
+.middlecontent2 .midimg2 img{
+    width: fit-content;
+    height: 260px;
+    margin-top: -20px;
+    margin-bottom: 0;
+    filter: drop-shadow(1px 1px 5px rgba(9, 45, 122, 0.288));
+}
+/*side bar styling*/
+.sidelistbar {
+    width: 400px;
+    background: linear-gradient(to bottom right, #344c57, #2c3e50);
+    color: white;
+    position: fixed;
+    inset: 0 -450px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 0 20px;
+    transition: .5s;
+}
+body.showbar .sidelistbar {
+    inset: 0 0 0 auto;
+}
+body.showbar .container {
+    transform: translateX(-250px);
+}
+.sidelistbar h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.sidelistbar .button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.sidelistbar .button button{
+    background-color: rgb(74, 138, 212);
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    border-radius: 16px;
+    margin: 8px 8px 8px 8px;
+    padding: 15px;
+}
+.sidelistbar .button button:hover {
+    background-color: #289cd2;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.sidelistbar .button .close {
+    background-color: rgb(74, 138, 212);
+}
+
+.sidelistbar .listcart .items img {
+    width: fit-content;
+    height: 80px;
+}
+.sidelistbar .listcart .items {
+    display: grid;
+    grid-template-columns: 90px 90px 50px 110px 1fr;
+    border-top: 1px solid rgba(255, 255, 255, 0.185);
+    margin-top: 0;
+    text-align: center;
+    align-items: center;
+}
+.sidelistbar .quantity span {
+    width: 25px;
+    height: 17px;
+    color: white;
+}
+.sidelistbar .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: white;
+}
+.sidelistbar .items:nth-child(even) {
+    background-color: rgba(42, 112, 192, 0.24);
+}
+.sidelistbar .items .remove img {
+    width: 25px;
+    height: fit-content;
+    margin-top: 2px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    padding: 3px;
+}
+.sidelistbar .items .remove img:hover {
+    padding: 3px;
+    width: 28px;
+    height: fit-content;
+}
+.TotalBar {
+    height: 20px;
+    padding-top: 22px;
+    padding-bottom:10px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.listcart {
+    overflow: auto;
+}
+
+/*Form styling*/
+.Appear {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(133, 214, 219, 0.932);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    animation: fadein 0.6s;
+    height: 600px;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+}
+/*form appear animation*/
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+.FormLayout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+form input{
+    font-size: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 7px;
+}
+form input[type="text"] {
+    width: 445px;
+}
+.FormHeading {
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+form label {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+.FormButton input[type="reset"], .FormButton input[type="submit"] {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-left: 20%;
+    font-weight: 500;
+}
+.FormButton input[type="reset"] {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.FormButton input[type="reset"]:hover {
+    background-color: #83effd;
+    border-radius: 15px;
+}
+
+.FormButton input[type="submit"]:hover {
+    background-color: #83effd;
+    border-radius: 15px;
+}
+.Appear img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px;
+}
+.Appear img:hover {
+    background-color: wheat;
+    padding: 1px;
+    width: 30px;
+    height: 30px;
+    border: 3px;
+}
+.userInput .error {
+    height: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: red;
+    margin-top: 5px;
+}

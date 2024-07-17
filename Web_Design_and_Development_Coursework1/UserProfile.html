@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Setup</title>
+    <link rel="stylesheet" href="userprofile.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"> <!-- Replace with your logo -->
+            <img src="Aqua pure network.png" alt="Website Logo">
+        </div>
+        <section class="mission">
+            <h1>AQUA PURE NETWORK</h1>
+            <p>Connecting Communities with Clean Water Solutions...</p>
+        </section>
+        </div>
+        <nav>
+            <div class="topnav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="shop.html">SHOPPING</a></li>
+                <li><a href="UserProfile.html" class="active">USER PROFILE</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+                <li><a href="content.html">ABOUT US</a></li>
+            </ul>
+            </div>
+        </nav>
+    <div class="user">   
+    <div class="container">
+        <h1>User Profile Setup</h1>
+        <button id="startBtn" onclick="startProfileSetup()">START</button>
+        <div id="profile-form" style="display:none;">
+            <div class="step" data-step="1">
+                <h2>STEP 1 Personal details</h2>
+                <button onclick="collectPersonalDetails()">Start Step 1</button>
+            </div>
+            <div class="step" data-step="2" style="display:none;">
+                <h2>STEP 2 Volunteering tasks</h2>
+                <button onclick="collectVolunteeringTasks()">Start Step 2</button>
+            </div>
+            <div class="step" data-step="3" style="display:none;">
+                <h2>STEP 3 Qualifications</h2>
+                <button onclick="collectQualifications()">Start Step 3</button>
+            </div>
+            <div class="step" data-step="4" style="display:none;">
+                <h2>STEP 4 Availability and contact</h2>
+                <button onclick="collectAvailabilityAndContact()">Start Step 4</button>
+            </div>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+        <div id="profile-output">
+            <h2>Profile Information</h2>
+            <p id="display-username"></p>
+            <p id="display-surname"></p>
+            <p id="display-age"></p>
+            <p id="display-gender"></p>
+            <p id="display-privacy"></p>
+            <p id="display-rational"></p>
+            <p id="display-doa"></p>
+            <p id="display-task"></p>
+            <p id="display-place"></p>
+            <p id="display-assignment"></p>
+            <p id="display-study"></p>
+            <p id="display-degree"></p>
+            <p id="display-university"></p>
+            <p id="display-year"></p>
+            <p id="display-country"></p>
+            <p id="display-availability"></p>
+            <p id="display-surname_contact"></p>
+            <p id="display-tel"></p>
+            <p id="display-email"></p>
+        </div>
+        <div id="completion-message" style="display: none;">
+            <h2>Profile Completed!</h2>
+            <button onclick="restart()">Edit Profile</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Aqua Pure Network</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <br><br>
+            <p><a href="PageEditor.html">Create by Afras</a></p>
+        </div>
+    </footer>
+    <script src="userprofile.js"></script>
+    </div>
+</body>
+</html>

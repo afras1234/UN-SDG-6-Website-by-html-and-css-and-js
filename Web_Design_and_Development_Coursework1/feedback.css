@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fedbk {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+
+.feedback-form {
+    padding: 20px;
+}
+
+
+.feedback-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.required-fields {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #e73933;
+}
+
+
+.feedback-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea,
+.feedback-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.feedback-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+.feedback-form input[type="radio"] {
+    margin-right: 10px;
+    display: inline;
+}
+
+/* Inline labels for radio buttons */
+.feedback-form label[for^="rating-"],
+.feedback-form label[for^="informative-"],
+.feedback-form label[for^="first-visit-"],
+.feedback-form label[for^="recommend-"] {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Button styling */
+.feedback-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Rating section styling */
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.rating label {
+    display: block;
+    margin-right: 5px;
+    color: #555;
+}
+
+.rating input[type="radio"] {
+    margin: 0 5px 0 0;
+    display: inline;
+}
+
+
